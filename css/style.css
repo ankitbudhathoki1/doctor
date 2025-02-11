@@ -1,13 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Triodion&display=swap');
 :root {
     --border-color-one: #000;
     --border-color-two: #cac7c7;
     --button-color-one: #b0b0b0;
+    --button-color-two: orange;
     --button-hover-one: #777;
     --background-main: #f7f7f7;
+    --background-two: #fef5ca;
     --primary-font: "Merriweather", serif;
+    --paragraph-font: "Triodion", serif;
   }
 
 body{
@@ -23,16 +26,34 @@ body{
 .nav-wrapper .navbar-nav.justify-content-end.flex-grow-1 {
     gap: 20px;
   }
-  .nav-wrapper .nav-item .nav-link {
+  .nav-wrapper .nav-item .nav-link.active{
+    color: orange;
+  }
+  .nav-wrapper .nav-item .nav-link,
+  .nav-wrapper .dropdown-item {
     font-size: 1.1rem;
     font-weight: 500;
     padding: 5px 3px;
+    font-family: var(--primary-font);
+    &:hover{
+      color: orange;
+    }
+  }
+  .nav-wrapper .dropdown:hover .dropdown-menu {
+display: block;
+  }
+  .nav-wrapper .dropdown-item {
+    padding: 6px 10px;
+ 
+  }
+  .nav-wrapper .dropdown-divider {
+    margin: 0;
   }
 
 
   /* hero section settings */
   .hero-section {
-    padding: 25px 15px;
+    padding: 50px 15px;
   }
   .hero-section h3 {
     font-size: 3.6rem;
@@ -117,3 +138,377 @@ body{
     justify-content: end;
     align-items: center;
   }
+
+  /* about me section */
+  .about-me,
+  .journey{
+    background-color: var(--background-two);
+    padding: 20px 10px;
+  }
+  .about-me .about-image img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    border: 1px solid var(--border-color-one);
+    object-fit: cover;
+  }
+  .about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-me .about-discription h3,
+  .journey .body h3{
+    font-size: 2.6rem;
+    font-family: var(--primary-font);
+  }
+  .about-me .about-discription p ,
+  .journey .body p{
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  /* journey settings */
+  .journey .body img {
+    width: 250px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 0px;
+  }
+
+  /* services slider settings */
+  .services-slider .item {
+    padding: 3px;
+  }
+  .services-slider .title h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 5px 0 25px 0;
+  }
+  .services-slider {
+    padding: 30px 10px;
+  }
+  .services-slider .card a,
+  .services .card a {
+    text-decoration: none;
+    color: #000;
+  }
+  .services-slider .card .card-body,
+  .services .card .card-body {
+    padding: 0;
+  }
+  .services-slider .card,
+  .services .card-wrapper .card{
+    height: 330px;
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
+  .services .card-wrapper .card{
+    width: 250px;
+  }
+  .services-slider .card .card-image,
+  .services .card-wrapper .card .card-image{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  .services-slider .card .card-image img,
+  .services .card-wrapper .card .card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .services-slider .card .card-body h4,
+  .services .card-wrapper .card .card-body h4 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 8px 0;
+    transition: 0.2s;
+    &:hover{
+      color: orange;
+    }
+  }
+
+  .services-slider .owl-carousel .owl-nav button.owl-prev,
+  .services-slider .owl-carousel .owl-nav button.owl-next {
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    top: 130px;
+    border-radius: 50%;
+    background-color: Orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-slider .owl-carousel .owl-nav button.owl-prev{
+    left: -60px;
+  }
+  .services-slider .owl-carousel .owl-nav button.owl-next{
+    right: -60px;
+  }
+  .services-slider .owl-carousel .owl-nav span {
+    color: white;
+    font-size: 3rem;
+    height: 30px;
+    line-height: 25px;
+  }
+  .services-slider .view-all a {
+    background: var(--button-color-two);
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin: 15px 0;
+  }
+  .services .view-all {
+    margin: 0 auto;
+  }
+  section.services {
+    padding: 20px 5px;
+  }
+  /* servives page settings */
+  .services .card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 0px 11px;
+  }
+  .services .title h3 {
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-family: var(--primary-font);
+  }
+
+/* testomonial settings */
+.testomonials{
+  /* position: relative; */
+}
+.testomonials .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.testomonials .title {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: 1px solid orange;
+  border-radius: 50px;
+  align-items: center;
+  height: 50px;
+  margin: 0 0 30px 0;
+}
+.testomonials .title a {
+  text-decoration: none;
+  background: orange;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: 0px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.testomonials .title h5 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  font-family: var(--primary-font);
+}
+.testomonial-body {
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f9efde;
+  border: 1px solid orange;
+}
+.testomonial-body .image {
+  height: 230px;
+  background: orange;
+  width: 210px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.testomonial-body .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 2px solid orange;
+}
+.testomonial-image-wrapper {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 34px;
+}
+.testomonial-body .reviewer {
+  margin: 5px 0;
+}
+.testomonial-body .reviewer .name h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 3px 0px;
+}
+.testomonial-body .reviewer .name p {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.testomonials .item {
+  padding: 5px;
+}
+.testomonial-body .reviews {
+  margin: 5px 0 0 35px;
+}
+.testomonial-body .reviews h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.testomonial-body .reviews p {
+  text-align: justify;
+  font-family: var(--paragraph-font);
+  font-size: 1.2rem;
+}
+.testomonial-body .reviews i {
+  color: orange;
+  font-size: 2.8rem;
+  margin: 0px 9px;
+}
+.testomonial-body .reviews h5 i {
+  margin: 0px 15px 0 -30px;
+}
+.testomonial-body .reviews p i {
+  margin: 0 0 0 15px;
+}
+.testomonials .owl-nav span {
+  font-size: 5rem;
+  line-height: 28px;
+  height: 35px;
+  color: orange;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover span,
+.owl-carousel .owl-nav button.owl-next:hover span{
+color: #fff;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+  position: absolute;
+  top: 140px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.2s;
+
+  &:hover{
+    background-color: orange;
+  }
+}
+.owl-carousel .owl-nav button.owl-prev{
+  left: -70px;
+}
+.owl-carousel .owl-nav button.owl-next{
+  right: -70px;
+}
+.testomonials .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: orange;
+}
+
+
+
+/* reiki page */
+.service .list-wrapper ul {
+  list-style: none;
+}
+.service .list ul i{
+  margin-right: 10px;
+}
+.service .list-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.service .list {
+  flex: 1;
+}
+.service {
+  padding: 30px 0;
+}
+.service p img {
+  float: left;
+  width: 176px;
+  height: 215px;
+  object-fit: cover;
+  margin: 0 20px 10px 0;
+  border-radius: 10px;
+  border: 2px solid orange;
+}
+.service h3 {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+.service p {
+  font-size: 1.2rem;
+  text-align: justify;
+  font-family: var(--paragraph-font);
+}
+.service h5,
+.reiki-services h3 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  margin: 30px 0 10px 0;
+}
+.reiki-services p,
+.reiki-services li,
+.service .list ul{
+  font-size: 1.3rem;
+  font-family: var(--paragraph-font);
+}
+.reiki-services a,
+.service .content a  {
+  text-decoration: none;
+  font-size: 1.2rem;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+.reiki-services ul{
+  list-style: none;
+}
+
+.service .content a{
+  text-decoration: none;
+  color: #a51c30;
+  &:hover{
+    color: orange;
+  }
+}
+.service .content .more-info{
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+
+

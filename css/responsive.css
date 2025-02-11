@@ -1,0 +1,189 @@
+@media (max-width: 1400px) {
+
+}
+@media (max-width: 1200px) {
+    .hero-section h3 {
+        font-size: 3rem;
+      }
+      .about-me .about-discription h3, .journey .body h3 {
+        font-size: 2.2rem;
+      }
+      .services-slider .owl-carousel .owl-nav button.owl-prev {
+        left: 0;
+      }
+      .services-slider .owl-carousel .owl-nav button.owl-next {
+        right: 0;
+      }
+      .testomonials .title h5 {
+        font-size: 1.5rem;
+      }
+}
+@media (max-width: 1024px) {
+    .hero-section h3 {
+        font-size: 2.4rem;
+      }
+      .social-media i {
+        font-size: 1.7rem;
+        height: 45px;
+        width: 45px;
+      }
+      .about-me .about-discription h3, .journey .body h3 {
+        font-size: 2rem;
+      }
+      .about-me .about-discription p, .journey .body p {
+        font-size: 1.15rem;
+      }
+}
+@media (max-width: 992px) {
+    .owl-theme .owl-nav{
+        display: none;
+    }
+    .service h3 {
+        font-size: 1.7rem;
+      }
+      .service h5, .reiki-services h3 {
+        font-size: 1.5rem;
+      }
+}
+@media (max-width: 768px) {
+    .reiki-services p, .reiki-services li, .service .list ul {
+        font-size: 1.15rem;
+        padding: 0;
+      }
+}
+@media (max-width: 767.98px) {
+    .row.rr {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .hero-image {
+        justify-content: center;
+        margin-bottom: 25px;
+      }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-section h3 {
+        font-size: 1.9rem;
+      }
+      .hero-section .hero-image img {
+        height: 300px;
+        width: 300px;
+      }
+      .about-me .about-image img {
+        height: 250px;
+        width: 250px;
+      }
+      .about-image {
+        margin-bottom: 20px;
+      }
+      .about-me .about-discription h3, .journey .body h3 {
+        font-size: 1.8rem;
+      }
+}
+@media (min-width: 768px) and (max-width: 926px) { 
+    .hero-section h3 {
+        font-size: 1.7rem;
+      }
+      .hero-section .hero-image img {
+        height: 250px;
+        width: 250px;
+      }
+      .about-me .about-image img {
+        height: 230px;
+        width: 230px;
+      }
+}
+@media (max-width: 667px) {
+    .testomonial-body {
+        flex-direction: column;
+      }
+      .testomonial-image-wrapper {
+        width: 100%;
+      }
+      .testomonial-body .reviews {
+        margin: 0px 15px;
+      }
+      .service .list {
+        flex: none;
+        margin: 0 90px 15px 0;
+      }
+      .service h3 {
+        font-size: 1.5rem;
+      }
+      .service h5, .reiki-services h3 {
+        font-size: 1.4rem;
+      }
+      .service p img {
+        height: 185px;
+        width: 166px;
+      }
+}
+@media (max-width: 576px) {
+    .testomonials .title h5 {
+        font-size: 1.3rem;
+      }
+      .testomonials .title {
+        height: 40px;
+      }
+      .testomonials .title a {
+        height: 45px;
+        width: 45px;
+      }
+      .about-me .about-discription p, .journey .body p {
+        font-size: 1.10rem;
+      }
+      .hero-section h3 {
+        font-size: 1.8rem;
+      }
+      .hero-section p {
+        font-size: 1.3rem;
+      }
+}
+@media (max-width: 390px) {
+    .testomonial-body .reviews h5 {
+        font-size: 1.3rem;
+      }
+      .testomonial-body .image {
+        height: 200px;
+      }
+      .testomonials .title a {
+        font-size: 1rem;
+      }
+      .journey .body img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 0px;
+      }
+      .services-slider .title h3 {
+        font-size: 2.1rem;
+      }
+      .testomonial-body .reviews i {
+        font-size: 1.8rem;
+      }
+      .testomonial-body .reviews p {
+        font-size: 1.1rem;
+      }
+      .service .list {
+        margin: 0;
+      }
+      .service .list-wrapper {
+        display: block;
+      }
+}
+@media (max-width: 320px) {
+    .hero-section h3 {
+        font-size: 1.5rem;
+      }
+      .about-me .about-discription h3, .journey .body h3 {
+        font-size: 1.6rem;
+      }
+}
+
+
+
+
+
+
+
