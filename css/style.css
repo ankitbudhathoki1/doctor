@@ -1,0 +1,119 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --border-color-one: #000;
+    --border-color-two: #cac7c7;
+    --button-color-one: #b0b0b0;
+    --button-hover-one: #777;
+    --background-main: #f7f7f7;
+    --primary-font: "Merriweather", serif;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-main);
+}
+
+/* settings for navbar */
+.nav-wrapper .navbar {
+    border-bottom: 1px solid var(--border-color-two);
+  }
+.nav-wrapper .navbar-nav.justify-content-end.flex-grow-1 {
+    gap: 20px;
+  }
+  .nav-wrapper .nav-item .nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 3px;
+  }
+
+
+  /* hero section settings */
+  .hero-section {
+    padding: 25px 15px;
+  }
+  .hero-section h3 {
+    font-size: 3.6rem;
+    font-family: var(--primary-font);
+    text-transform: capitalize;
+  }
+  .hero-section p {
+    font-size: 1.4rem;
+  }
+  .hero-section .btn {
+    background: var(--button-color-one);
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 6px 25px;
+
+    &:hover{
+        background-color: var(--button-hover-one);
+    }
+  }
+  .social-media a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 15px;
+  }
+  .social-media i{
+    font-size: 2rem;
+    background: transparent;
+      background-color: transparent;
+    height: 55px;
+    width: 55px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid;
+  }
+  .social-media {
+    margin: 25px 0;
+  }
+  .social-media i.facebook {
+    color: #1877f2;
+
+
+    &:hover{
+        color: white;
+        background-color: #1877f2;
+    }
+  }
+  .social-media i.instagram {
+    color: #e4405f;
+    &:hover{
+        color: white;
+        background-color: #e4405f;
+    }
+  }
+  .social-media i.youtube {
+    color: #ff0000;
+
+    &:hover{
+    color: white;
+    background-color: #ff0000;
+    }
+    
+  }
+  .social-media i.whatsapp {
+    color: #25d366;
+
+    &:hover{
+    color: white;
+    background-color: #25d366;
+    }
+  }
+
+  .hero-section .hero-image img {
+    height: 350px;
+    width: 350px;
+    border-radius: 30px;
+    border: 1px solid black;
+  }
+  .hero-image {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
