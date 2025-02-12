@@ -2,7 +2,7 @@ $('.service-preview').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     responsive:{
         0:{
