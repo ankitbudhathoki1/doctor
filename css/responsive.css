@@ -44,6 +44,22 @@
       .service h5, .reiki-services h3 {
         font-size: 1.5rem;
       }
+      .contact-page h1 {
+        font-size: 1.8rem;
+      }
+      .contact-page h2 {
+        font-size: 1.45rem;
+      }
+      .contact-page .icon-body h3 {
+        font-size: 1.3rem;
+      }
+      .contact-page li, .contact-page p, .message-us .form-label, .contact-page .icon-body a {
+        font-size: 1rem;
+      }
+      footer .footer-content a {
+        font-size: 1.1rem;
+      }
+      
 }
 @media (max-width: 768px) {
     .reiki-services p, .reiki-services li, .service .list ul {
@@ -79,6 +95,9 @@
       }
       .about-me .about-discription h3, .journey .body h3 {
         font-size: 1.8rem;
+      }
+      .rights {
+        margin-top: 15px;
       }
 }
 @media (min-width: 768px) and (max-width: 926px) { 
@@ -138,6 +157,22 @@
       }
       .hero-section p {
         font-size: 1.3rem;
+      }
+      .contact-page h1 {
+        font-size: 1.4rem;
+      }
+      .contact-page h2 {
+        font-size: 1.25rem;
+      }
+      .contact-page .icon-body h3 {
+        font-size: 1.2rem;
+      }
+      footer .footer-content h4 {
+        font-size: 1.3rem;
+      }
+      .rights {
+        flex-direction: column;
+        text-align: center;
       }
 }
 @media (max-width: 390px) {

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Home</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,6 +12,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/lightbox.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -19,62 +20,61 @@
 <body>
   <section class="nav-wrapper">
     <div class="container-fluid">
-        <div class="row">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Logo Here</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo Here</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Programs/Servies
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Reiki</a></li>
-                                            <hr class="dropdown-divider">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Logo Here</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo Here</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Programs/Servies
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                      <hr class="dropdown-divider">
+                      <li><a class="dropdown-item" href="reiki.html">Reiki</a></li>
+                      <hr class="dropdown-divider">
+                      <li><a class="dropdown-item" href="lifestyle-disorder-reversal-programs.html">LDRP</a></li>
+                      <hr class="dropdown-divider">
+                      <li><a class="dropdown-item" href="yoga-and-meditation.html">Yoga</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testomonials">Testomonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ebooks.html">eBooks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="gallery-category.html">Gallery</a>
+                  </li>
 
-                                        <li><a class="dropdown-item" href="#">LDRP</a></li>
-                                            <hr class="dropdown-divider">
-                                        <li><a class="dropdown-item" href="#">Yoga</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Testomonials</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">eBooks</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Gallery</a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </div>
-</section>
+  </section>
   <!-- navbar ends -->
 
   <!-- hero section starts -->
@@ -86,7 +86,10 @@
             <h5>Inner Healing and Mindfulness</h5>
             <h3>Your Inner healing, disease reversal, mindfulness journey with Dr. Shreya and team</h3>
             <p><i>We are here to help you to make your life blissful</p></i>
-            <a class="btn" href="#">Learn More</a>
+            <div class="buttons">
+              <a class="btn" href="#">Learn More</a>
+              <a class="btn" href="#">Book an Appointment</a>
+            </div>
             <div class="social-media">
               <a target="_blank" href="#"><i class="fa-brands fa-youtube youtube"></i></a>
               <a target="_blank" href="#"><i class="fab fa-facebook-f facebook"></i></a>
@@ -133,7 +136,7 @@
       <div class="row">
         <div class="body">
           <h3>My Reiki Journey</h3>
-          <p>ack in the year 2012, when I was pursuing my studies in MD (Clinical Yoga) in India I met with a bus
+          <p>Back in the year 2012, when I was pursuing my studies in MD (Clinical Yoga) in India I met with a bus
             accident leading to multiple fractures in my both the legs (which was severe) and there I was with no hopes
             of coming back to normal life and continuing my studies. With this physical and emotional turmoil, I was
             introduced to Reiki by my dad’s friend, with less or no interest I joined the course, learnt basic level and
@@ -259,39 +262,43 @@
         <div class="col-md-6 offset-md-3">
           <div class="title">
             <h5>Clients Testomonials</h5>
-              <a href="#">Reiki</a>
+            <a href="#">Reiki</a>
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <div class="owl-carousel slider owl-theme"> <div class="item">
-            <div class="testomonial-body">
-              <div class="testomonial-image-wrapper">
-                <div class="image">
-                  <img src="images/dp1.jpeg" alt="reviewer" class="img-fluid">
-                </div>
-                <div class="reviewer text-center">
-                  <div class="rating">
-                    <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
-                    <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+        <div class="col-md-10 offset-md-1 col-lg-10 offset-lg-1">
+          <div class="owl-carousel slider owl-theme">
+            <div class="item">
+              <div class="testomonial-body">
+                <div class="testomonial-image-wrapper">
+                  <div class="image">
+                    <img src="images/dp1.jpeg" alt="reviewer" class="img-fluid">
                   </div>
-                  <div class="name">
-                    <h4>Dr. Aishworya</h4>
-                    <p>Dubai</p>
+                  <div class="reviewer text-center">
+                    <div class="rating">
+                      <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+                      <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+                      <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+                      <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+                      <a href="#"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></a>
+                    </div>
+                    <div class="name">
+                      <h4>Dr. Aishworya</h4>
+                      <p>Dubai</p>
+                    </div>
                   </div>
+
                 </div>
-  
-              </div>
-              <div class="reviews">
+                <div class="reviews">
                   <h5><i class="fa-solid fa-quote-left"></i>Reiki level 1 was amazing...</h5>
-                  <p>Thank you Shreya for the amazing Level 1 Reiki class. Enjoyed learning from you and much appreciated with the patience and effort you took to explain each and everything in detail and clearing my doubts without any hesitation. Looking forward to learn more from you. Thank you so much for the wondeful session.<i class="fa-solid fa-quote-right"></i></p>
+                  <p>Thank you Shreya for the amazing Level 1 Reiki class. Enjoyed learning from you and much
+                    appreciated with the patience and effort you took to explain each and everything in detail and
+                    clearing my doubts without any hesitation. Looking forward to learn more from you. Thank you so much
+                    for the wondeful session.<i class="fa-solid fa-quote-right"></i></p>
+                </div>
               </div>
             </div>
-          </div>
             <div class="item">
               <div class="testomonial-body">
                 <div class="testomonial-image-wrapper">
@@ -311,15 +318,18 @@
                       <p>Kerela, India</p>
                     </div>
                   </div>
-    
+
                 </div>
                 <div class="reviews">
-                    <h5><i class="fa-solid fa-quote-left"></i>Beneficial on psychological & physical conditions</h5>
-                    <p>I could do level 1 Reiki training from Dr Shreya. I started practicing for myself and others. Thank you Dr Shreya, for introducing me to the world of energy healing. I could observe beneficial effect on psychological and physical conditions. Others are also getting health benefits when I give them healing. Thank you once again<i class="fa-solid fa-quote-right"></i></p>
+                  <h5><i class="fa-solid fa-quote-left"></i>Beneficial on psychological & physical conditions</h5>
+                  <p>I could do level 1 Reiki training from Dr Shreya. I started practicing for myself and others. Thank
+                    you Dr Shreya, for introducing me to the world of energy healing. I could observe beneficial effect
+                    on psychological and physical conditions. Others are also getting health benefits when I give them
+                    healing. Thank you once again<i class="fa-solid fa-quote-right"></i></p>
                 </div>
               </div>
             </div>
-           
+
             <div class="item">
               <div class="testomonial-body">
                 <div class="testomonial-image-wrapper">
@@ -339,11 +349,16 @@
                       <p>Maharastra, India</p>
                     </div>
                   </div>
-  
+
                 </div>
                 <div class="reviews">
-                    <h5><i class="fa-solid fa-quote-left"></i>Reiki improved my sleep, stress and concentration.</h5>
-                    <p>I was always interested and curious about Reiki. One day I got to know that Dr. Shreya Ma'am is conducting certified workshop on Reiki level 1. So I immediately enrolled myself for the same. I felt the positive changes in me during the workshop itself. As I was the new mom, I was in need of relaxation. After the self practice my sleep quality has improved, stress reduced, concentration improved and I feel relaxed physically and mentally. Thank you<i class="fa-solid fa-quote-right"></i></p>
+                  <h5><i class="fa-solid fa-quote-left"></i>Reiki improved my sleep, stress and concentration.</h5>
+                  <p>I was always interested and curious about Reiki. One day I got to know that Dr. Shreya Ma'am is
+                    conducting certified workshop on Reiki level 1. So I immediately enrolled myself for the same. I
+                    felt the positive changes in me during the workshop itself. As I was the new mom, I was in need of
+                    relaxation. After the self practice my sleep quality has improved, stress reduced, concentration
+                    improved and I feel relaxed physically and mentally. Thank you<i
+                      class="fa-solid fa-quote-right"></i></p>
                 </div>
               </div>
             </div>
@@ -366,11 +381,15 @@
                       <p>Chennai, India</p>
                     </div>
                   </div>
-  
+
                 </div>
                 <div class="reviews">
-                    <h5><i class="fa-solid fa-quote-left"></i>Reiki has changed my life for better...</h5>
-                    <p>I finished my Reiki level 1 course with Dr. Shreya Revadi and the experience was amazing. She is a very unique, kind and interesting teacher. Reiki has changed my life for the better. I feel it is working at a deep level within myself. After reiki " The right things are coming to me at the right time."Thank you Dr.Shreya mam for the wonderful experience.<i class="fa-solid fa-quote-right"></i></p>
+                  <h5><i class="fa-solid fa-quote-left"></i>Reiki has changed my life for better...</h5>
+                  <p>I finished my Reiki level 1 course with Dr. Shreya Revadi and the experience was amazing. She is a
+                    very unique, kind and interesting teacher. Reiki has changed my life for the better. I feel it is
+                    working at a deep level within myself. After reiki " The right things are coming to me at the right
+                    time."Thank you Dr.Shreya mam for the wonderful experience.<i class="fa-solid fa-quote-right"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -393,11 +412,14 @@
                       <p>Mumbai, India</p>
                     </div>
                   </div>
-  
+
                 </div>
                 <div class="reviews">
-                    <h5><i class="fa-solid fa-quote-left"></i>My skin is glowing..</h5>
-                    <p>I  attended Dr.Shreya's 7 days Detox Challenge Program. I lost 1.5kg of body weight in these detox days. Best part was my skin use to be very rough and now it's glowing. Looking forward to more such health programs. Thank you so much for this detox program.<i class="fa-solid fa-quote-right"></i></p>
+                  <h5><i class="fa-solid fa-quote-left"></i>My skin is glowing..</h5>
+                  <p>I attended Dr.Shreya's 7 days Detox Challenge Program. I lost 1.5kg of body weight in these detox
+                    days. Best part was my skin use to be very rough and now it's glowing. Looking forward to more such
+                    health programs. Thank you so much for this detox program.<i class="fa-solid fa-quote-right"></i>
+                  </p>
                 </div>
               </div>
             </div>
@@ -420,45 +442,97 @@
                       <p>Hyderabad, India</p>
                     </div>
                   </div>
-  
+
                 </div>
                 <div class="reviews">
-                    <h5><i class="fa-solid fa-quote-left"></i>Reversal program changed my life entirely</h5>
-                    <p>
-                     I always struggled to follow a pattern in terms of losing excess weight. Being a Naturopath professional is not a easy job as how we advise our patients and guide them simultaneously. But one fine day was going through Shreya Maam's posts about the successful stories of her patients and who are indeed the doctors too. Yes, I decided the very next minute and approached maam, where she explained me about the program and guided me. This time it was her motivation and moral support I got to begin with. I have observed such beautiful changes not only with the weight loss thing but overall activity in the day with no tiredness, being active and alert, most importantly is having a sound sleep which I really want to thank maa’m for am blessed to have such souls in my life who are giving their best to serve the society. Thanks and Regards,<i class="fa-solid fa-quote-right"></i></p>
+                  <h5><i class="fa-solid fa-quote-left"></i>Reversal program changed my life entirely</h5>
+                  <p>
+                    I always struggled to follow a pattern in terms of losing excess weight. Being a Naturopath
+                    professional is not a easy job as how we advise our patients and guide them simultaneously. But one
+                    fine day was going through Shreya Maam's posts about the successful stories of her patients and who
+                    are indeed the doctors too. Yes, I decided the very next minute and approached maam, where she
+                    explained me about the program and guided me. This time it was her motivation and moral support I
+                    got to begin with. I have observed such beautiful changes not only with the weight loss thing but
+                    overall activity in the day with no tiredness, being active and alert, most importantly is having a
+                    sound sleep which I really want to thank maa’m for am blessed to have such souls in my life who are
+                    giving their best to serve the society. Thanks and Regards,<i class="fa-solid fa-quote-right"></i>
+                  </p>
                 </div>
               </div>
             </div>
 
-        </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- <section class="services-slider">
-    <div class="container-fluid">
+  <!-- footer section  -->
+  <footer>
+    <div class="container">
       <div class="row">
-        <div class="title text-center">
-          <h3>services</h3>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="footer-content">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="reiki.html">Reiki</a></li>
+              <li><a href="lifestyle-disorder-reversal-programs.html">LDRP</a></li>
+              <li><a href="yoga-and-meditation.html">Yoga</a></li>
+            </ul>
+          </div>
         </div>
-
-          <div class="card-wrapper">
-            <div class="card">
-              <div class="card-image">
-                <img src="images/services/1.jpeg" alt="servies" class="img-fluid">
-              </div>
-              <div class="card-body">
-                <h4>Reiki</h4>
-              </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="footer-content">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="services.html">All Services</a></li>
+              <li><a href="#testomonials">Testomonials</a></li>
+              <li><a href="ebooks.html">eBooks</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="gallery-category.html">Gallery</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="footer-content">
+            <h4>Contact Us</h4>
+            <ul>
+              <li><i class="fa-solid fa-phone"></i><a href="tel:97715110453">+977-15110453</a></li>
+              <li><i class="fa-solid fa-envelope"></i><a href="mailto:shreyarevadi@gmail.com">shreyarevadi@gmail.com</a>
+              </li>
+              <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/ckbM8FxQ2L2PBSoT8">Tokha
+                  Palekhusi Tokha-3, Kathmandu Nepal</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="footer-content">
+            <h4>Follow Us</h4>
+            <div class="footer-social-media">
+              <a target="_blank" href="#"><i class="fa-brands fa-youtube youtube"></i></a>
+              <a target="_blank" href="#"><i class="fab fa-facebook-f facebook"></i></a>
+              <a target="_blank" href="#"><i class="fab fa-instagram instagram"></i></a>
+              <a target="_blank" href="#"><i class="fa-brands fa-whatsapp whatsapp"></i></a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="rights">
+        <div class="owned">
+          <p>&copy; owner</p>
+        </div>
+        <div class="developed">
+          <p>Developed By: <a href="https://ankitbudhathoki.com.np/">Ankit Budhathoki</a></p>
+        </div>
       </div>
     </div>
-   </section> -->
+    </div>
+  </footer>
   <script src="js/jquery-3.7.1.slim.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+      <script src="js/lightbox.js"></script>
   <script src="js/owl.carousel.js"></script>
   <script src="js/custom.js"></script>
 </body>
